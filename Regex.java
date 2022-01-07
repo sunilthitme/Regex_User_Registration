@@ -17,6 +17,10 @@ public class Regex {
 	System.out.println("Enter your Email Id:: ");
 	String emailId = sc.next();
 	user.emailaddress(emailId);
+	System.out.println("Enter your phoneNo:: ");
+	String phoneNo = sc.next();
+	user.phoneNo(phoneNo);
+	
 	}
 }
 
