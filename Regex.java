@@ -20,6 +20,11 @@ public class Regex {
 	System.out.println("Enter your phoneNo:: ");
 	String phoneNo = sc.next();
 	user.phoneNo(phoneNo);
+	System.out.println("Enter your Password:: ");
+	String passRule1 = sc.next();
+	user.passRule1(passRule1);
+	
+	
 	
 	}
 }
