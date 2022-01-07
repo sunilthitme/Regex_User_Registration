@@ -21,8 +21,8 @@ public class Regex {
 	String phoneNo = sc.next();
 	user.phoneNo(phoneNo);
 	System.out.println("Enter your Password:: ");
-	String passRule1 = sc.next();
-	user.passRule1(passRule1);
+	String passRule2 = sc.next();
+	user.passward(passRule2);
 	
 	
 	

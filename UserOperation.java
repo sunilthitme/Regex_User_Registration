@@ -51,15 +51,16 @@ public class UserOperation {
             System.out.println("Your Phone Number " + phoneNo + " is Invalid");
         }
     }
-    public void passRule1(String passRule1) {
-        String regex = "^[0-9][a-z][A-Z]{8}$";
+    public void passward(String passward) {
+        //String regex = "^[0-9a-zA-Z]{8,}$";
+        String regex = "^(?=.*[A-Z]){1}(?=.*[a-z]).{8,}$";
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(passRule1);
+        Matcher matcher = pattern.matcher(passward);
         boolean valid = matcher.matches();
         if (valid == true) {
-            System.out.println("Your Passward " + passRule1 + " is Valid");
+            System.out.println("Your Passward " + passward + " is Valid");
         } else {
-            System.out.println("Your Passward " + passRule1 + " is Invalid");
+            System.out.println("Your Passward " + passward + " is Invalid");
         }
     }
 }
