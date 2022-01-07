@@ -40,4 +40,15 @@ public class UserOperation {
             System.out.println("Your Email Address "+emailaddress+" is Invalid");
         }
     }
+    public void phoneNo(String phoneNo) {
+        String regex = "^[6789]{1}[0-9]{9}";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(phoneNo);
+        boolean valid = matcher.matches();
+        if (valid == true) {
+            System.out.println("Your Phone Number " + phoneNo + " is Valid");
+        } else {
+            System.out.println("Your Phone Number " + phoneNo + " is Invalid");
+        }
+    }
 }
