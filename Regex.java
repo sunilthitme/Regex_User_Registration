@@ -8,7 +8,7 @@ public class Regex {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your First Name:: ");
+		System.out.println("Enter your Last Name:: ");
 		String name = sc.next();
 		Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}{3,}");
 		Matcher matcher = pattern.matcher(name);
